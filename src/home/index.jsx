@@ -1,7 +1,8 @@
+import NavBar from "@/libs/src/navbar";
 import React from "react";
 
 const Home = () => {
-  return <div className="home">Home</div>;
+  return <>Home he</>;
 };
 
 export default Home;
