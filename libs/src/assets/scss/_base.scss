@@ -45,7 +45,14 @@ body {
   color: #fff;
 }
 
+:root {
+  --primary-color: #e7c435;
+}
+
 .menu_head {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
