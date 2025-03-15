@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "LexendDeca";
+  font-weight: 200;
+  font-display: swap;
+  src: url("../fonts/Lexend_Deca/LexendDeca-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "LexendDeca";
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/Lexend_Deca/LexendDeca-Light.ttf");
+}
+
+@font-face {
+  font-family: "LexendDeca";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Lexend_Deca/LexendDeca-Regular.ttf");
+}
+
+@font-face {
+  font-family: "LexendDeca";
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/Lexend_Deca/LexendDeca-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "LexendDeca";
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/Lexend_Deca/LexendDeca-Bold.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "LexendDeca", Helvetica, Arial, sans-serif !important;
+}
+
+body {
+  background-color: #000000;
+  color: #fff;
+}
+
+:root {
+  --primary-color: #e7c435;
+}
+
+.menu_head {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+  background: rgba(0, 0, 0, 0.5);
+  .image {
+    font-size: 16px;
+    color: #e7c435;
+  }
+  .nav_bar_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    .nav_bar_item {
+      margin: 0 15px 0 15px;
+      cursor: pointer;
+      color: #777777;
+      position: relative;
+      transition: color 0.3s ease-in-out;
+      &:hover {
+        color: #b8b8b8;
+      }
+      &::after {
+        content: "";
+        border-color: #e7c435 !important;
+        left: 0;
+        height: 2px;
+        border-radius: 10px;
+        border: 2px solid;
+        position: absolute;
+        bottom: -5px;
+        width: 100%;
+        display: none;
+      }
+      &.active {
+        color: #fff;
+        &::after {
+          display: block;
+        }
+      }
+    }
+  }
+}

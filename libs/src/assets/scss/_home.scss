@@ -1,0 +1,50 @@
+.home_page {
+  margin: 0 auto;
+  width: 50%;
+  .home_page_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    .home_page_content_title {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      div {
+        color: #ffffaf;
+      }
+      h1 {
+        font-size: 3rem;
+        font-weight: 600;
+      }
+      .welcome_text {
+        color: #ffffff;
+      }
+    }
+    .home_page_image {
+    }
+  }
+}
+
+.text_animation {
+  font-weight: 600;
+  font-size: 1.5rem;
+  background: linear-gradient(to right, #ffffff, #ffffaf);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-animation 4s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes text-animation {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
