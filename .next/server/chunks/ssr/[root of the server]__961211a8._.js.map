@@ -2,6 +2,6 @@
   "version": 3,
   "sources": [],
   "sections": [
-    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///home/hieu/dailyCode/portfolio-nextjs/pages/_app.js"],"sourcesContent":["import \"@/styles/globals.css\";\nimport \"@/libs/src/assets/scss/main.scss\";\n\nexport default function App({ Component, pageProps }) {\n  return <Component {...pageProps} />;\n}\n"],"names":[],"mappings":";;;;;;;AAGe,SAAS,IAAI,EAAE,SAAS,EAAE,SAAS,EAAE;IAClD,qBAAO,qKAAC;QAAW,GAAG,SAAS;;;;;;AACjC","debugId":null}},
-    {"offset": {"line": 31, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///home/hieu/dailyCode/portfolio-nextjs/pages/_app.js"],"sourcesContent":["import \"@/styles/globals.css\";\nimport \"@/libs/src/assets/scss/main.scss\";\nimport NavBar from \"@/libs/src/navbar\";\n\nexport default function App({ Component, pageProps }) {\n  return (\n    <>\n      <NavBar />\n      <Component {...pageProps} />\n    </>\n  );\n}\n"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;AAIe,SAAS,IAAI,EAAE,SAAS,EAAE,SAAS,EAAE;IAClD,qBACE;;0BACE,qKAAC;;;;;0BACD,qKAAC;gBAAW,GAAG,SAAS;;;;;;;;AAG9B","debugId":null}},
+    {"offset": {"line": 51, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
 }

@@ -41,7 +41,7 @@
 }
 
 body {
-  background-color: #000000;
+  background-color: #121212;
   color: #fff;
 }
 
@@ -52,12 +52,12 @@ body {
 .menu_head {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 80rem;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  height: 70px;
-  background: rgba(0, 0, 0, 0.5);
+  justify-content: space-between;
+  background: rgba(18, 18, 18, 0.5);
+  padding: 30px;
   .image {
     font-size: 16px;
     color: #e7c435;
@@ -96,4 +96,11 @@ body {
       }
     }
   }
+}
+
+.container {
+  margin: 0 auto;
+  width: 80rem;
+  display: flex;
+  // flex-direction: column;
 }
