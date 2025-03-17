@@ -12,10 +12,10 @@ const Home = () => {
         </div>
         <div className="home_page_image">
           <Image
-            src="/images/home_page_image.png"
+            src="/images/avatar-home.jpg"
             alt="home_page_image"
-            width={100}
-            height={100}
+            width={300}
+            height={300}
           />
         </div>
       </div>

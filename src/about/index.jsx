@@ -1,4 +1,4 @@
-import NavBar from "@/libs/src/navbar";
+import NavBar from "@/libs/navbar";
 import React from "react";
 
 const About = () => {
